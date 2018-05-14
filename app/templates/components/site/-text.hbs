@@ -1,0 +1,18 @@
+{{#if isEdit}}
+<div class="w-full flex">
+  {{#if previewing}}
+    <div class="w-1/2">
+      <div class="p-2">
+        {{textarea value=config.text class="w-full"}}
+      </div>
+    </div>
+  {{else}}
+    <div class="w-1/2">
+      <div class="px-2">
+        {{markdown-to-html config.text}}
+      </div>
+    </div>
+  {{/if}}
+  </div>
+  {{#ui/p-button click=(action "save")}}Save{{/ui/p-button}}
+{{/if}}

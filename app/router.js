@@ -7,6 +7,14 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('cards');
+  this.route('buttons');
+  this.route('tables');
+
+  this.route('rtc', function() {
+    this.route('camera');
+  });
+  this.route('microsite');
 });
 
 export default Router;

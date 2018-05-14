@@ -1,4 +1,6 @@
-{{ui/navigation-bar}}
-<div class="container">
-    {{outlet}}
+<div class="absolute w-full h-full">
+    {{ui/navigation-bar}}
+    <div class="h-full overflow-scroll relative">
+        {{outlet}}
+    </div>
 </div>

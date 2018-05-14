@@ -1,0 +1,27 @@
+<div class="flex flex-col justify-center">
+  <div class="flex justify-center py-2">
+    {{#if isLive}}
+      {{#ui/p-button click=(action 'stop')}}Disable Camera{{/ui/p-button}}
+    {{else}}
+      {{#ui/p-button click=(action 'start')}}Enable Camera{{/ui/p-button}}
+    {{/if}}
+  </div>
+  <div class="flex justify-center">
+    <video autoplay playsinline></video>
+  </div>
+  <div class="w-full flex justify-end">
+    {{#if isLive}}
+      {{#if isRecording}}
+        {{#ui/s-button click=(action 'stopRecording')}}Stop Recording{{/ui/s-button}}
+      {{else}}
+        {{#ui/p-button click=(action 'startRecording')}}Start Recording{{/ui/p-button}}
+      {{/if}}
+    {{/if}}
+  </div>
+
+  {{#if canDownload}}
+    {{#ui/p-button click=(action 'downloadRecording')}}
+      Download
+    {{/ui/p-button}}
+  {{/if}}
+</div>

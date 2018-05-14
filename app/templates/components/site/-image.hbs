@@ -1,0 +1,15 @@
+{{#if isEdit}}
+  EDITING
+  <div class="flex justify-center h-32">
+    <img src={{config.src}}/>
+  </div>
+  
+  {{#ui/s-button click=(action 'save')}}Save{{/ui/s-button}}
+  <input type="file" name="image" accept="image/*" onchange={{action "upload"}}>
+{{else}}
+  <div>
+    <img src={{config.src}} class={{config.layout}} />
+  </div>
+  {{#ui/s-button click=(action 'edit')}}Edit{{/ui/s-button}}
+
+{{/if}}

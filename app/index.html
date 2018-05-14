@@ -14,12 +14,13 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
-    {{content-for "body"}}
+  <body class="h-full">
+    {{content-for "body" class="h-full"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ember-playground.js"></script>
-
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    
     {{content-for "body-footer"}}
   </body>
 </html>

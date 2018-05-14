@@ -43,8 +43,8 @@ export default {
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
   'orange-dark': '#de751f',
-  'orange': '#f6993f',
-  'orange-light': '#faad63',
+  'orange': '#F1592A',
+  'orange-light': '#FF7B2C',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 
@@ -80,13 +80,13 @@ export default {
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
 
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
+  'indigo-darkest': '#223440',
+  'indigo-darker': '#1B2A33',
+  'indigo-dark': '#30495A',
+  'indigo': '#293F4D',
+  'indigo-light': '#527E99',
+  'indigo-lighter': '#74B2D9',
+  'indigo-lightest': '#74B2D9',
 
   'purple-darkest': '#21183c',
   'purple-darker': '#382b5f',
@@ -104,4 +104,14 @@ export default {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
 
+
+  'seismic-orange': '#F1592A', 
+  'seismic-sunbream': '#F7CE47',
+  'seismic-ice-blue': '#D0E7EF',
+  'seismic-blue-sky': '#1CA2DC',
+  'seismic-ultramarine': '#0076A8',
+  'seismic-moon-grey': '#EDEDEE',
+  'seismic-sterling': '#A6BBC8', 
+  'seismic-slate': '#536872', 
+  'seismic-midnight': '#293F4D', 
 };

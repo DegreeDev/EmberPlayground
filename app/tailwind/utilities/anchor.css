@@ -3,3 +3,9 @@
  *
  * You can rename this file whatever you like and also make other files.
 **/
+a.active {
+  color:#F1592A;
+}
+a.active:hover {
+  color: #FF7B2C;
+}

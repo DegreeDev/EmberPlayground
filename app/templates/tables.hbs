@@ -1,0 +1,26 @@
+
+{{#light-table table class="w-full"  as |t|}}
+  {{t.head onColumnClick=(action 'onColumnClick')}}
+
+  {{#t.body multiSelect=true as |body|}}
+    {{#if isLoading}}
+      {{#body.loader}}
+        Loading...
+      {{/body.loader}}
+    {{/if}}
+
+    {{#if table.isEmpty}}
+      {{#body.no-data}}
+        Nothing to see here...
+      {{/body.no-data}}
+    {{/if}}
+  {{/t.body}}
+{{/light-table}}
+
+<div class="flex justify-end py-2">
+  {{#if hasSelection}}
+    {{#ui/s-button click=(action "clear")}}
+      Clear Selection
+    {{/ui/s-button}}
+  {{/if}}
+</div>
